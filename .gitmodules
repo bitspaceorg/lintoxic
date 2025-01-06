@@ -1,0 +1,6 @@
+[submodule "lintoxic-fe"]
+	path = lintoxic-fe
+	url = https://github.com/Sak1012/lintoxic-fe.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Sak1012/lintoxic-fe.git
