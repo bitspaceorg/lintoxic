@@ -76,7 +76,7 @@ Lintoxic is a robust system that suppors features like fact checking, Profanity,
 - **Detecting AI**: Used for factual accuracy checking while eliminating fact checking for ambiguous content as in conversations or comments
 - **Logging**: For thread safe logging of offensive content and maintenance of moderation and production logs
 
-Frontend of Lintoxic is developed using Streamlit to provide a versatile experience to evaluate performance of the moderation system for several file type and/or content which can be deployed seamlessly to the cloud using Streamlit Public cloud or other cloud service providers
+Frontend of Lintoxic is built in NextJS to provide a versatile experience to evaluate performance of the moderation system for several file type and/or content which can be deployed seamlessly to the cloud using tools like Vercel cloud or other cloud service providers
 
 # Proposal
 
@@ -106,7 +106,8 @@ You need to make sure that the following dependencies are available on your syst
 
 ### Steps to Run Locally
 
-Access the Streamlit dashboard to perform moderation tasks. The dashboard provides an intuitive interface for analyzing text, images, and videos for toxic content. Launch the dashboard by following the instructions in the [Development](#development) section and navigate to [http://localhost:8501](http://localhost:8501).
+**Backend:** Check out the [backend repository](https://github.com/grittypuffy/lintoxic-be) and install the dependencies using Poetry
+**Frontend:** Check out the [frontend repository](https://github.com/Sak1012/lintoxic-fe) and install the dependencies using yarn or npm
 
 ### Prerequisites
 
@@ -115,27 +116,7 @@ Make sure that the following dependencies are available on your system for devel
 1. Python: Version 3.12 or later (needed for lingua language detector to work properly)
 2. Poetry: For dependency management
 3. Tesseract OCR: Required for text detection in images
-
-### Installing dependencies
-
-Clone the Github repository for setting up the project and installing the needed dependencies:
-
-git clone https://github.com/grittypuffy/lintoxic
-cd lintoxic
-poetry install
-
-### Activate the virtual environment on Linux distributions. Use Scripts\Activate.ps1 in Windows for the same
-
-```
-source $(poetry env info --path)/bin/activate
-Start the Streamlit dashboard with the following command:
-
-poetry run python -m streamlit run lintoxic/app.py
-```
-
-You can now view your Streamlit app in your browser at [http://localhost:8501](http://localhost:8501).
-
-/////////// pls change the Installing dependency as per your changes yesterday pls /////////////
+4. Node js for Frontend
 
 # Acknowledgements
 
