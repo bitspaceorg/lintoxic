@@ -78,8 +78,6 @@ Lintoxic is a robust system that suppors features like fact checking, Profanity,
 
 Frontend of Lintoxic is developed using Streamlit to provide a versatile experience to evaluate performance of the moderation system for several file type and/or content which can be deployed seamlessly to the cloud using Streamlit Public cloud or other cloud service providers
 
-///////////pls change the streamlit dashboard content given above ///////////////////
-
 # Proposal
 
 # Contributing
