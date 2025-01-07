@@ -1,6 +1,6 @@
 <div align = "center">
 
-<h1> Lintoxic </h1>
+<h1 > Lintoxic </h1>
 <h2> Linting Toxicity</h2>
 <h3> Kynnovate 2025 </h3>
 
