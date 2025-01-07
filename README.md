@@ -1,15 +1,12 @@
-<div align = "center">
+# Lintoxic
 
-<h1 > Lintoxic </h1>
-<h2> Linting Toxicity</h2>
-<h3> Kynnovate 2025 </h3>
-
-</div>
 Lintoxic (Linter for toxic content and beyond) is a pluggable, cost-effective, privacy-friendly, multilingual content moderation system. The project was born out of a need for open source moderation systems that would help organizations to effectively monitor and process content to filter out harmful or offensive content while staying in compliance with regulatory requirements for data.
 
 It supports mixed-code detection and supports vernacular languages such as Tamil with mixed-code (Tanglish) for improved accuracy in detection of harmful content in local community services such as KYNHood, Koo, etc. providing a more inclusive and safe space for online interaction.
 
 It supports processing of several file types such as audio, video, image and text for automated detection and flagging of potentially offensive or unacceptable content that goes against general community guidelines of a platform or service and supports NSFW content detection, false information detection, toxicity evaluation, etc.
+
+**Made For KYNNOVATE 2025 by Team Phoenix**
 
 ## **Table of Contents**
 
