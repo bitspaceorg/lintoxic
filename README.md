@@ -13,7 +13,6 @@ It supports processing of several file types such as audio, video, image and tex
 - [Working](#working)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Proposal](#proposal)
 - [Team Members](#team-members)
 - [Contributing](#contributing)
   - [Development](#development)
@@ -22,7 +21,9 @@ It supports processing of several file types such as audio, video, image and tex
 
 # Working
 
-Lintoxic is a robust system that suppors features like fact checking, Profanity, Toxicity for english and mixed-code native languages such as Tanglish tailored specifically for Kynhood. The moderation system supports multi platform checking including images, text, audio and video formats. We also have lingual support for a few more native languages including French, German, Portuguese, Russian and much more !
+Lintoxic is a robust system that suppors features like fact checking, Profanity, Toxicity for english and mixed-code native languages such as Tanglish tailored specifically for Kynhood. The moderation system supports multi platform checking including images, text, audio and video formats. We also have lingual support for a few more native languages including French, German, Portuguese, Russian and much more!
+
+![Architecture of Lintoxic](./assets/architecture.png)
 
 ## Image Moderation
 
@@ -59,7 +60,6 @@ Lintoxic is a robust system that suppors features like fact checking, Profanity,
 7. **NSFW Flagging**: Detects and flags NSFW images, explicit audio, and harmful text embedded in images to maintain platform integrity.
 8. **Video Processing**: Analyzes video content for inappropriate or harmful material, complementing image and audio moderation.
 
----
 
 # Technologies Used
 
@@ -67,18 +67,21 @@ Lintoxic is a robust system that suppors features like fact checking, Profanity,
 
 - **FastAPI**: Implementation of RESTful API meant to be integrated with content processing systems in
 - **HuggingFace Transformers**: Leveraged by lintoxic for evaluation of NSFW content in images and video frames, harmful content in textual content or multimedia content by means of OCR for images and videos and ASR for audio and video. The models used by Lintoxic are:
+  
   a. **Hate-speech-CNERG/deoffxlmr-mono-tamil**: Tanglish detection (mixed code)
+  
   b. **Falconsai/nsfw_image_detection** - NSFW image detection
+  
   c. **facebook/mbart-large-50-many-to-one-mmt** - Many to one translation for offensive content detection in audio
+  
   d. **Detoxify - XLM-RoBERTa** (multilingual) for multilingual toxicity detection
+
 - **Tesseract**: Used for performing OCR to retrieve textual content from both images and videos (by using OpenCV for frame extraction)
 - **SpeechRecognition**: Used for translation of text in other languages to English for offensive content detection and transcriptions using Google Translate API
 - **Detecting AI**: Used for factual accuracy checking while eliminating fact checking for ambiguous content as in conversations or comments
 - **Logging**: For thread safe logging of offensive content and maintenance of moderation and production logs
 
 Frontend of Lintoxic is built in NextJS to provide a versatile experience to evaluate performance of the moderation system for several file type and/or content which can be deployed seamlessly to the cloud using tools like Vercel cloud or other cloud service providers
-
-# Proposal
 
 # Contributing
 
